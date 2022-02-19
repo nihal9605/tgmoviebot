@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('updates', url='https://t.me/josprojects')
+                InlineKeyboardButton('Channel', url='https://t.me/HQ_PreDVD')
             ],
             [
                 InlineKeyboardButton('help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -43,15 +43,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, Script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Add me to your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('help', callback_data='help'),
             InlineKeyboardButton('about', callback_data='about')
             ],[
             InlineKeyboardButton('search here movie', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('updates', url='https://t.me/josprojects'),
-            InlineKeyboardButton('movie club', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('Channel', url='https://t.me/HQ_PreDVD'),
+            InlineKeyboardButton('movies Group', url='https://t.me/MM_MoviezGroup')
             ],[
             InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
         ]]
@@ -91,15 +91,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Add me to your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('help', callback_data='help'),
             InlineKeyboardButton('about', callback_data='about')
             ],[
             InlineKeyboardButton('search here movie', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('updates', url='https://t.me/josprojects'),
-            InlineKeyboardButton('movie club', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('Channel', url='https://t.me/HQ_PreDVD,
+            InlineKeyboardButton('movies Group', url='https://t.me/MM_MoviezGroup')
             ],[
             InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
         ]]
@@ -150,7 +150,7 @@ async def start(client, message):
                     InlineKeyboardButton('channel', url='https://t.me/JosProjects')
                 ],
                 [
-                    InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/+y53tWFUw6Q43NzE9')
+                    InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/+TZSMLnG_L5WJc8Rx')
                 ]
                 ]
             try:
@@ -264,7 +264,7 @@ async def start(client, message):
             InlineKeyboardButton('channel', url='https://t.me/JosProjects')
         ],
         [
-            InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/+TZSMLnG_L5WJc8Rx')
         ]
         ]
     await client.send_cached_media(
